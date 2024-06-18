@@ -2,17 +2,15 @@
 //Pacci Pérez Giorgini Disalvatore
 
 #include<iostream>
-
+#include<stdlib.h>
 using namespace std;
 
 int main(){
 	
 	double a,b,c;
-	
+	cout<<"\nENCONTRANDO EL NUMERO MAYOR"<<endl;
 	cout<<"ingrese numeros diferentes: \n";
-	cout<<"Digite un numero a: ";cin>>a;
-	cout<<"Digite un numero b: ";cin>>b;
-	cout<<"Digite un numero c: ";cin>>c;
+	cout<<"Digite un numero para a,b,c: ";cin>>a>>b>>c;
 	
 	if ((b!=c)&&(a!=b)&&(a!=c)){	
 		if((a>b)&&(a>c)){
@@ -26,8 +24,9 @@ int main(){
 		}
 	}
 	else {
-		cout<<"no pueden ser numeros iguales"<<endl;
+		cout<<"No pueden ser numeros iguales"<<endl;
 	}
-
- return 0;
+	
+	system("pause");
+ 	return 0;
 }
