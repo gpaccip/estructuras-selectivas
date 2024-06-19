@@ -8,19 +8,20 @@ using namespace std;
 int main(){
 	
 	double a,b,c;
-	cout<<"\nENCONTRANDO EL NUMERO MAYOR"<<endl;
-	cout<<"ingrese numeros diferentes: \n";
-	cout<<"Digite un numero para a,b,c: ";cin>>a>>b>>c;
+	cout<<"\tENCONTRANDO EL NUMERO MAYOR"<<endl;
+	cout<<"Ingrese numeros diferentes: \n";
+	cout<<"Digite tres numeros: "<<endl;
+	cin>>a>>b>>c;
 	
 	if ((b!=c)&&(a!=b)&&(a!=c)){	
 		if((a>b)&&(a>c)){
-			cout<<"a es el numero mayor"<<endl;
+			cout<<a<<" es el numero mayor"<<endl;
 			}
 		else if((b>a)&&(b>c)){
-			cout<<"b es el numero mayor"<<endl;
+			cout<<b<<" es el numero mayor"<<endl;
 			}
 		else{
-		cout<<"c es el numero mayor"<<endl;
+		cout<<c<<" es el numero mayor"<<endl;
 		}
 	}
 	else {
