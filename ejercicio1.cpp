@@ -7,20 +7,23 @@ using namespace std;
 
 int main(){
 	
-	double a,b,c;
+	double a,b,c,d;
 	cout<<"\tENCONTRANDO EL MAYOR VALOR"<<endl;
-	cout<<"Ingrese valores diferentes \n";
-	cout<<"Digite tres numeros: "<<endl;cin>>a>>b>>c;
+	cout<<"Digite valores diferentes \n";
+	cout<<"Ingrese los cuatro numeros: "<<endl;cin>>a>>b>>c>>d;
 	
-	if ((b!=c)&&(a!=b)||(a!=c)){	
-		if((a>b)&&(a>c)){
+	if ((b!=c)&&(a!=b)||(a!=c)||(a!=d)||(b!=d)||(c!=d)){	
+		if((a>b)&&(a>c)&&(a>d)){
 			cout<<a<<" es el mayor valor"<<endl;
 			}
-		else if((b>a)&&(b>c)){
+		else if((b>a)&&(b>c)&&(b>d)){
 			cout<<b<<" es el mayor valor"<<endl;
 			}
-		else{
-		cout<<c<<" es el mayor valor"<<endl;
+		else if((c>a)&&(c>b)&&(c>d)){
+			cout<<c<<" es el mayor valor"<<endl;
+		}
+		else {
+			cout<<d<<" es el mayor valor"<<endl;
 		}
 	}
 	else {
