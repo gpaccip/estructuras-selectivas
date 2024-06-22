@@ -12,7 +12,7 @@ int main(){
 	cout<<"Digite valores diferentes \n";
 	cout<<"Ingrese los cuatro numeros: "<<endl;cin>>a>>b>>c>>d;
 	
-	if ((b!=c)&&(a!=b)||(a!=c)||(a!=d)||(b!=d)||(c!=d)){	
+	if ((b!=c)||(a!=b)||(a!=c)||(a!=d)||(b!=d)||(c!=d)){	
 		if((a>b)&&(a>c)&&(a>d)){
 			cout<<a<<" es el mayor valor"<<endl;
 			}
@@ -27,7 +27,8 @@ int main(){
 		}
 	}
 	else {
-		cout<<"Todos los numeros no deben ser iguales"<<endl;
+	
+		cout<<endl<<a<<" es el mayor valor pero los numeros no deben ser iguales"<<endl;
 	}
 	
 	system("pause");
