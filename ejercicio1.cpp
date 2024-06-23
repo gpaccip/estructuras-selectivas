@@ -14,21 +14,22 @@ int main(){
 	
 	if ((b!=c)||(a!=b)||(a!=c)||(a!=d)||(b!=d)||(c!=d)){	
 		if((a>b)&&(a>c)&&(a>d)){
-			cout<<a<<" es el mayor valor"<<endl;
+			cout<<endl<<a<<" es el mayor valor"<<endl;
 			}
 		else if((b>a)&&(b>c)&&(b>d)){
-			cout<<b<<" es el mayor valor"<<endl;
+			cout<<endl<<b<<" es el mayor valor"<<endl;
 			}
 		else if((c>a)&&(c>b)&&(c>d)){
-			cout<<c<<" es el mayor valor"<<endl;
+			cout<<endl<<c<<" es el mayor valor"<<endl;
 		}
 		else {
-			cout<<d<<" es el mayor valor"<<endl;
+			cout<<endl<<d<<" es el mayor valor"<<endl;
 		}
 	}
 	else {
 	
-		cout<<endl<<a<<" es el mayor valor pero los numeros no deben ser iguales"<<endl;
+		cout<<endl;
+		cout<<a<<" es el mayor valor pero los numeros no deben ser iguales"<<endl;
 	}
 	
 	system("pause");
